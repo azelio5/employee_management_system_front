@@ -1,4 +1,5 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import LayoutPage from "./pages/LayoutPage";
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<>Login page</>}/>
-                <Route path="" element={<>Layout page</>}>
+                <Route path="" element={<LayoutPage/>}>
                     <Route path="portal/admin" element={<>Manage Employee</>}/>
                     <Route path="portal/admin/myself" element={<>Manage Self Page</>}/>
                     <Route path="portal/manager" element={<>Manage Reports Page</>}/>
