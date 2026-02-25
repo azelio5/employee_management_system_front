@@ -20,7 +20,7 @@ export default function useAuthenticationService(request: Axios,
             setLoadingEmployeeInformation(true);
             setEmployeeAuthenticationError(false);
 
-            const response = await request.post("/login", {email, password});
+            const response = await request.post("auth/login", {email, password});
 
             updateEmployee(response.data);
         } catch (error) {

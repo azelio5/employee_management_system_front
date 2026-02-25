@@ -23,7 +23,7 @@ export const FormInput: React.FC<FormInputProps> =
                 className="employee-management-form-input"
                 name={name}
                 placeholder={placeHolder}
-                onInput={handleInput}
+                onChange={handleInput}
                 value={content}/>
         </div>
     )

@@ -12,14 +12,14 @@ interface FormProps {
     width?: string;
 }
 
-export const form: React.FC<FormProps> = ({
+export const Form: React.FC<FormProps> = ({
                                               buttonText, error, errorMessage, action,
                                               children, height = "fit-content",
                                               width = "fit-content"
                                           }) => {
     return (
         <form
-            className={`column employee-management-form' ${error ? 'employee-management-form-border-error' : 'employee-management-form-border'} `}
+            className={`column employee-management-form ${error ? 'employee-management-form-border-error' : 'employee-management-form-border'} `}
             style={{height, width}}>
             {error && <p className="employee-management-form-error-message">
                 {errorMessage}
@@ -28,6 +28,7 @@ export const form: React.FC<FormProps> = ({
             <Button type={"primary"} handleClick={action}>
                 {buttonText}
             </Button>
+
 
         </form>
     )

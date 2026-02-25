@@ -7,6 +7,7 @@ import useAxios from "./useAxios.ts";
 export type GlobalContextType = {
     employee: Employee | undefined;
     employees: Employee[];
+    authenticationService: AuthenticationServiceType;
 }
 
 export type GlobalContextReducers = {

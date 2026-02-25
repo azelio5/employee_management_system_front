@@ -1,8 +1,11 @@
 import useGlobalContext, {type GlobalContextType} from "../services/GlobalContext.tsx";
 import {useNavigate} from "react-router-dom";
 import {useEffect} from "react";
+import {LoginForm} from "../components/LoginForm/LoginForm.tsx";
+import '../App.css'
 
-export default function loginPage(){
+
+export default function LoginPage(){
 
     const {employee} = useGlobalContext() as GlobalContextType;
     const navigate = useNavigate();
@@ -19,9 +22,9 @@ export default function loginPage(){
 
     return(
         <div className="page">
-            <div className="page-container-center">
+            <div className="page-content-center">
                 <h1>Company Portal</h1>
-                <>Login Form</>
+                <LoginForm/>
             </div>
 
         </div>

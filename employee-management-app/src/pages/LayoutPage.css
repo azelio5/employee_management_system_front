@@ -1,8 +1,9 @@
 .layout-page {
+    height: fit-content;
     min-height: 100vh;
-    width: 100%;          /* ← добавь это */
+    /*width: 100%;          !* ← добавь это *!*/
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     background: var(--background);
 }

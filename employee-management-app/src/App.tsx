@@ -1,5 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import LayoutPage from "./pages/LayoutPage";
+import LoginPage from "./pages/LoginPage.tsx";
+import './App.css';
 
 function App() {
 
@@ -7,7 +9,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<>Login page</>}/>
+                <Route path="/" element={<LoginPage/>}/>
                 <Route path="" element={<LayoutPage/>}>
                     <Route path="portal/admin" element={<>Manage Employee</>}/>
                     <Route path="portal/admin/myself" element={<>Manage Self Page</>}/>
